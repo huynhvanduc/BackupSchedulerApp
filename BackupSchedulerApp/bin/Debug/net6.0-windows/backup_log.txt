@@ -1,0 +1,56 @@
+2025-06-22 05:18:28 - Bắt đầu sao lưu từ 'D:\LearnCode\New folder\A' đến 'D:\LearnCode\New folder\A\AA\2025_06_22_051828'.
+2025-06-22 05:18:28 - Đã tạo thư mục sao lưu mới: 'D:\LearnCode\New folder\A\AA\2025_06_22_051828'.
+2025-06-22 05:18:28 - Đã tạo thư mục con: 'D:\LearnCode\New folder\A\AA\2025_06_22_051828\AA'.
+2025-06-22 05:18:28 - Đã tạo thư mục con: 'D:\LearnCode\New folder\A\AA\2025_06_22_051828\AA\2025_06_22_051828'.
+2025-06-22 05:18:29 - Đã sao chép tệp: 'D:\LearnCode\New folder\A\Angular Masterclass 2025.pdf' đến 'D:\LearnCode\New folder\A\AA\2025_06_22_051828\Angular Masterclass 2025.pdf'.
+2025-06-22 05:18:29 - Đã sao chép tệp: 'D:\LearnCode\New folder\A\Beginning Azure DevOps 2023.pdf' đến 'D:\LearnCode\New folder\A\AA\2025_06_22_051828\Beginning Azure DevOps 2023.pdf'.
+2025-06-22 05:18:29 - Đã sao chép tệp: 'D:\LearnCode\New folder\A\Enterprise Architecture with .NET - 2025.pdf' đến 'D:\LearnCode\New folder\A\AA\2025_06_22_051828\Enterprise Architecture with .NET - 2025.pdf'.
+2025-06-22 05:18:29 - Đã sao chép tệp: 'D:\LearnCode\New folder\A\AA\RabbitMQ in Depth.pdf' đến 'D:\LearnCode\New folder\A\AA\2025_06_22_051828\AA\RabbitMQ in Depth.pdf'.
+2025-06-22 05:18:29 - Đã sao chép tệp: 'D:\LearnCode\New folder\A\AA\SQL Server Query Tuning and Optimization.pdf' đến 'D:\LearnCode\New folder\A\AA\2025_06_22_051828\AA\SQL Server Query Tuning and Optimization.pdf'.
+2025-06-22 05:18:29 - Sao lưu thành công đến 'D:\LearnCode\New folder\A\AA\2025_06_22_051828'.
+2025-06-22 05:18:29 - Sao lưu thủ công thành công.
+2025-06-22 05:18:34 - Đã lưu cấu hình ứng dụng sau sao lưu thủ công.
+2025-06-22 05:18:34 - Đã tạo thư mục tác vụ: \BackupSchedulerAppTasks
+2025-06-22 05:18:34 - Đã thêm hành động chạy ứng dụng: 'D:\LearnCode\BackupSchedulerApp\BackupSchedulerApp\bin\Debug\net6.0-windows\BackupSchedulerApp.exe' với đối số '--backup'.
+2025-06-22 05:18:34 - Đã thêm lịch hourly: mỗi 1 giờ.
+2025-06-22 05:18:34 - Đã đăng ký tác vụ 'BackupSchedulerAppTask' thành công trong thư mục 'BackupSchedulerAppTasks'.
+2025-06-22 05:18:34 - Đã tạo/cập nhật tác vụ theo lịch sau sao lưu thủ công.
+2025-06-22 05:19:10 - Đã lưu cấu hình ứng dụng.
+2025-06-22 05:19:10 - Đã xóa tác vụ cũ: 'BackupSchedulerAppTask'.
+2025-06-22 05:19:10 - Đã thêm hành động chạy ứng dụng: 'D:\LearnCode\BackupSchedulerApp\BackupSchedulerApp\bin\Debug\net6.0-windows\BackupSchedulerApp.exe' với đối số '--backup'.
+2025-06-22 05:19:10 - Đã thêm lịch hourly: mỗi 1 giờ.
+2025-06-22 05:19:10 - Đã đăng ký tác vụ 'BackupSchedulerAppTask' thành công trong thư mục 'BackupSchedulerAppTasks'.
+2025-06-22 05:22:34 - Đã lưu cấu hình ứng dụng.
+2025-06-22 05:22:34 - Đã xóa tác vụ cũ: 'BackupSchedulerAppTask'.
+2025-06-22 05:22:34 - Đã thêm hành động chạy ứng dụng: 'D:\LearnCode\BackupSchedulerApp\BackupSchedulerApp\bin\Debug\net6.0-windows\BackupSchedulerApp.exe' với đối số '--backup'.
+2025-06-22 05:22:34 - Đã thêm lịch hourly: mỗi 1 giờ.
+2025-06-22 05:22:34 - Đã đăng ký tác vụ 'BackupSchedulerAppTask' thành công trong thư mục 'BackupSchedulerAppTasks'.
+2025-06-22 05:24:22 - Đã lưu cấu hình ứng dụng.
+2025-06-22 05:24:22 - Đã xóa tác vụ cũ: 'BackupSchedulerAppTask'.
+2025-06-22 05:24:23 - Đã thêm hành động chạy ứng dụng: 'D:\LearnCode\BackupSchedulerApp\BackupSchedulerApp\bin\Debug\net6.0-windows\BackupSchedulerApp.exe' với đối số '--backup'.
+2025-06-22 05:24:23 - Đã thêm lịch hourly: mỗi 1 giờ.
+2025-06-22 05:24:23 - Đã đăng ký tác vụ 'BackupSchedulerAppTask' thành công trong thư mục 'BackupSchedulerAppTasks'.
+2025-06-22 05:30:04 - Đã lưu cấu hình ứng dụng.
+2025-06-22 05:30:04 - Đã thêm hành động chạy ứng dụng: 'D:\LearnCode\BackupSchedulerApp\BackupSchedulerApp\bin\Debug\net6.0-windows\BackupSchedulerApp.exe' với đối số '--backup'.
+2025-06-22 05:30:04 - Đã thêm lịch hourly: mỗi 1 giờ.
+2025-06-22 05:30:04 - Đã đăng ký tác vụ 'BackupSchedulerAppTask' thành công trong thư mục 'BackupSchedulerAppTasks'.
+2025-06-22 05:30:34 - Ứng dụng khởi động ở chế độ sao lưu ẩn.
+2025-06-22 05:30:34 - Đang thực hiện sao lưu từ 'D:\LearnCode\New folder\A' đến 'D:\LearnCode\New folder\BKA'.
+2025-06-22 05:30:34 - Bắt đầu sao lưu từ 'D:\LearnCode\New folder\A' đến 'D:\LearnCode\New folder\BKA\2025_06_22_053034'.
+2025-06-22 05:30:34 - Đã tạo thư mục sao lưu mới: 'D:\LearnCode\New folder\BKA\2025_06_22_053034'.
+2025-06-22 05:30:34 - Đã tạo thư mục con: 'D:\LearnCode\New folder\BKA\2025_06_22_053034\AA'.
+2025-06-22 05:30:34 - Đã tạo thư mục con: 'D:\LearnCode\New folder\BKA\2025_06_22_053034\AA\2025_06_22_051828'.
+2025-06-22 05:30:34 - Đã tạo thư mục con: 'D:\LearnCode\New folder\BKA\2025_06_22_053034\AA\2025_06_22_051828\AA'.
+2025-06-22 05:30:34 - Đã tạo thư mục con: 'D:\LearnCode\New folder\BKA\2025_06_22_053034\AA\2025_06_22_051828\AA\2025_06_22_051828'.
+2025-06-22 05:30:34 - Đã sao chép tệp: 'D:\LearnCode\New folder\A\Angular Masterclass 2025.pdf' đến 'D:\LearnCode\New folder\BKA\2025_06_22_053034\Angular Masterclass 2025.pdf'.
+2025-06-22 05:30:34 - Đã sao chép tệp: 'D:\LearnCode\New folder\A\Beginning Azure DevOps 2023.pdf' đến 'D:\LearnCode\New folder\BKA\2025_06_22_053034\Beginning Azure DevOps 2023.pdf'.
+2025-06-22 05:30:34 - Đã sao chép tệp: 'D:\LearnCode\New folder\A\Enterprise Architecture with .NET - 2025.pdf' đến 'D:\LearnCode\New folder\BKA\2025_06_22_053034\Enterprise Architecture with .NET - 2025.pdf'.
+2025-06-22 05:30:34 - Đã sao chép tệp: 'D:\LearnCode\New folder\A\AA\RabbitMQ in Depth.pdf' đến 'D:\LearnCode\New folder\BKA\2025_06_22_053034\AA\RabbitMQ in Depth.pdf'.
+2025-06-22 05:30:34 - Đã sao chép tệp: 'D:\LearnCode\New folder\A\AA\SQL Server Query Tuning and Optimization.pdf' đến 'D:\LearnCode\New folder\BKA\2025_06_22_053034\AA\SQL Server Query Tuning and Optimization.pdf'.
+2025-06-22 05:30:34 - Đã sao chép tệp: 'D:\LearnCode\New folder\A\AA\2025_06_22_051828\Angular Masterclass 2025.pdf' đến 'D:\LearnCode\New folder\BKA\2025_06_22_053034\AA\2025_06_22_051828\Angular Masterclass 2025.pdf'.
+2025-06-22 05:30:34 - Đã sao chép tệp: 'D:\LearnCode\New folder\A\AA\2025_06_22_051828\Beginning Azure DevOps 2023.pdf' đến 'D:\LearnCode\New folder\BKA\2025_06_22_053034\AA\2025_06_22_051828\Beginning Azure DevOps 2023.pdf'.
+2025-06-22 05:30:34 - Đã sao chép tệp: 'D:\LearnCode\New folder\A\AA\2025_06_22_051828\Enterprise Architecture with .NET - 2025.pdf' đến 'D:\LearnCode\New folder\BKA\2025_06_22_053034\AA\2025_06_22_051828\Enterprise Architecture with .NET - 2025.pdf'.
+2025-06-22 05:30:34 - Đã sao chép tệp: 'D:\LearnCode\New folder\A\AA\2025_06_22_051828\AA\RabbitMQ in Depth.pdf' đến 'D:\LearnCode\New folder\BKA\2025_06_22_053034\AA\2025_06_22_051828\AA\RabbitMQ in Depth.pdf'.
+2025-06-22 05:30:34 - Đã sao chép tệp: 'D:\LearnCode\New folder\A\AA\2025_06_22_051828\AA\SQL Server Query Tuning and Optimization.pdf' đến 'D:\LearnCode\New folder\BKA\2025_06_22_053034\AA\2025_06_22_051828\AA\SQL Server Query Tuning and Optimization.pdf'.
+2025-06-22 05:30:34 - Sao lưu thành công đến 'D:\LearnCode\New folder\BKA\2025_06_22_053034'.
+2025-06-22 05:30:34 - Quá trình sao lưu ẩn hoàn tất.
