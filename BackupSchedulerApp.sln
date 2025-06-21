@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36121.58 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupSchedulerApp", "BackupSchedulerApp\BackupSchedulerApp.csproj", "{705F322C-A502-496A-AD20-209DEE5859CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{705F322C-A502-496A-AD20-209DEE5859CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{705F322C-A502-496A-AD20-209DEE5859CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{705F322C-A502-496A-AD20-209DEE5859CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{705F322C-A502-496A-AD20-209DEE5859CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DE7E294-FB2E-4B7A-BBBD-73EDF62D27F2}
+	EndGlobalSection
+EndGlobal
