@@ -22,30 +22,11 @@ namespace BackupSchedulerApp
 
         private void InitializeUI()
         {
-            // Event handlers for radio buttons to control UI visibility
-            rbHourly.CheckedChanged += (s, e) => UpdateScheduleControls();
-            rbDaily.CheckedChanged += (s, e) => UpdateScheduleControls();
-            rbWeekly.CheckedChanged += (s, e) => UpdateScheduleControls();
-
-            // Populate DayOfWeek ComboBox
-            cbDayOfWeek.Items.AddRange(Enum.GetNames(typeof(DayOfWeek)));
-            cbDayOfWeek.SelectedItem = DayOfWeek.Monday.ToString(); // Default selection
-
-            // Set DateTimePickers to show time only
-            dtpDailyTime.Format = DateTimePickerFormat.Time;
-            dtpDailyTime.ShowUpDown = true;
-            dtpWeeklyTime.Format = DateTimePickerFormat.Time;
-            dtpWeeklyTime.ShowUpDown = true;
-
             UpdateScheduleControls(); // Initial call to set correct visibility
         }
 
         private void UpdateScheduleControls()
         {
-            nudHourlyInterval.Enabled = rbHourly.Checked;
-            dtpDailyTime.Enabled = rbDaily.Checked;
-            cbDayOfWeek.Enabled = rbWeekly.Checked;
-            dtpWeeklyTime.Enabled = rbWeekly.Checked;
         }
 
         private void LoadConfiguration()
@@ -58,25 +39,6 @@ namespace BackupSchedulerApp
                     txtSourcePath.Text = settings.SourcePath;
                     txtDestinationPath.Text = settings.DestinationPath;
 
-                    switch (settings.ScheduleType)
-                    {
-                        case ScheduleType.Hourly:
-                            rbHourly.Checked = true;
-                            nudHourlyInterval.Value = settings.HourlyInterval;
-                            break;
-                        case ScheduleType.Daily:
-                            rbDaily.Checked = true;
-                            dtpDailyTime.Value = DateTime.Today.Add(settings.DailyTime);
-                            break;
-                        case ScheduleType.Weekly:
-                            rbWeekly.Checked = true;
-                            cbDayOfWeek.SelectedItem = settings.WeeklyDay.ToString();
-                            dtpWeeklyTime.Value = DateTime.Today.Add(settings.WeeklyTime);
-                            break;
-                        default:
-                            rbDaily.Checked = true; // Default to daily if no type is set
-                            break;
-                    }
                     UpdateStatus("Đã tải cấu hình.", false);
                 }
                 else
@@ -99,22 +61,7 @@ namespace BackupSchedulerApp
                 DestinationPath = txtDestinationPath.Text
             };
 
-            if (rbHourly.Checked)
-            {
-                settings.ScheduleType = ScheduleType.Hourly;
-                settings.HourlyInterval = (int)nudHourlyInterval.Value;
-            }
-            else if (rbDaily.Checked)
-            {
-                settings.ScheduleType = ScheduleType.Daily;
-                settings.DailyTime = dtpDailyTime.Value.TimeOfDay;
-            }
-            else if (rbWeekly.Checked)
-            {
-                settings.ScheduleType = ScheduleType.Weekly;
-                settings.WeeklyDay = (DayOfWeek)Enum.Parse(typeof(DayOfWeek), cbDayOfWeek.SelectedItem.ToString());
-                settings.WeeklyTime = dtpWeeklyTime.Value.TimeOfDay;
-            }
+            settings.ScheduleType = ScheduleType.Daily;
             return settings;
         }
 
@@ -141,7 +88,6 @@ namespace BackupSchedulerApp
             string destinationPath = txtDestinationPath.Text;
 
             UpdateStatus("Đang chạy sao lưu thủ công...", false);
-            btnRunNow.Enabled = false;
             btnSaveConfig.Enabled = false;
 
             await Task.Run(async () => // Run backup and task creation on a background thread
@@ -188,7 +134,6 @@ namespace BackupSchedulerApp
                 {
                     Invoke((MethodInvoker)delegate
                     {
-                        btnRunNow.Enabled = true;
                         btnSaveConfig.Enabled = true;
                     });
                 }

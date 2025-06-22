@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackupSchedulerApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e69fa7eef122b42d82f57aed29f6ae9c6d22632")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd7a5861d224f95e030c14b8e8090ba375d71e9a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackupSchedulerApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackupSchedulerApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,7 +1,7 @@
 {
   "SourcePath": "D:\\LearnCode\\New folder\\A",
   "DestinationPath": "D:\\LearnCode\\New folder\\BKA",
-  "ScheduleType": 0,
+  "ScheduleType": 1,
   "HourlyInterval": 1,
   "DailyTime": "07:00:00",
   "WeeklyDay": 1,

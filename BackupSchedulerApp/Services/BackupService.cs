@@ -16,8 +16,10 @@ internal class BackupService
             throw new DirectoryNotFoundException($"Thư mục nguồn không tồn tại: '{sourcePath}'");
         }
 
+        DirectoryInfo dirInfo = new DirectoryInfo(sourcePath);
+
         // Create a timestamped folder for the current backup
-        string backupFolderName = DateTime.Now.ToString("yyyy_MM_dd_HHmmss");
+        string backupFolderName = dirInfo.Name + DateTime.Now.ToString("yyyy_MM_dd_HHmmss");
         string currentBackupDestination = Path.Combine(destinationPath, backupFolderName);
 
         Logger.Log($"Bắt đầu sao lưu từ '{sourcePath}' đến '{currentBackupDestination}'.", logFilePath);

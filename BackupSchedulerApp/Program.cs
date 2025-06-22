@@ -10,7 +10,7 @@ internal static class Program
     /// The main entry point for the application.
     /// </summary>
     [STAThread]
-    static async Task Main(string[] args)
+    static void Main(string[] args)
     {
         // Set the current directory to the application's executable directory.
         // This ensures log.txt and config.json are created next to the .exe.
@@ -29,7 +29,7 @@ internal static class Program
                 if (settings != null)
                 {
                     Logger.Log($"Đang thực hiện sao lưu từ '{settings.SourcePath}' đến '{settings.DestinationPath}'.", logFilePath);
-                    await BackupService.PerformBackup(settings.SourcePath, settings.DestinationPath, logFilePath);
+                    BackupService.PerformBackup(settings.SourcePath, settings.DestinationPath, logFilePath);
                     Logger.Log("Quá trình sao lưu ẩn hoàn tất.", logFilePath);
                 }
                 else
