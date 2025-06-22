@@ -1,0 +1,13 @@
+[
+  {
+    "Id": "c99a8a2e-dfff-49e9-99ac-e49bce740394",
+    "Name": "A-\u003EB",
+    "SourcePath": "D:\\LearnCode\\BackupSchedulerApp\\Test\\A",
+    "DestinationPath": "D:\\LearnCode\\BackupSchedulerApp\\Test\\BKA",
+    "ScheduleType": 0,
+    "HourlyInterval": 0.01,
+    "DailyTime": "07:00:00",
+    "WeeklyDay": 1,
+    "WeeklyTime": "10:00:00"
+  }
+]

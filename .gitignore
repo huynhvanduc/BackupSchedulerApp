@@ -3,3 +3,10 @@
 ################################################################################
 
 /.vs
+/Backup.Core/bin/Debug/net8.0
+/Backup.Core/obj
+/Backup.Ultilities/bin/Debug/net8.0
+/Backup.Ultilities/obj
+/Backup.Window/bin/Debug/net8.0-windows
+/Backup.Window/obj
+/BackupCore/obj

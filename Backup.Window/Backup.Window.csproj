@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<OutputPath>$(SolutionDir)_Build\</OutputPath>
+  </PropertyGroup>
+	
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+  	<!-- Thêm hoặc sửa đổi dòng này cho cấu hình Release -->
+	  <OutputPath>$(SolutionDir)_Build\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TaskScheduler" Version="2.12.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Backup.Core\BackupCore.csproj" />
+    <ProjectReference Include="..\Backup.Ultilities\Backup.Ultilities.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Backup.Core\\BackupCore.csproj",
+        "Action": "Start",
+        "DebugTarget": "BackupCore"
+      },
+      {
+        "Path": "Backup.Window\\Backup.Window.csproj",
+        "Action": "Start",
+        "DebugTarget": "Backup.Window"
+      }
+    ]
+  }
+]
