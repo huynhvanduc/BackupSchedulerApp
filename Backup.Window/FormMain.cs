@@ -212,10 +212,10 @@ public partial class FormMain : Form
         {
             BackupProfile profileToSave = GetProfileFromUI();
 
-            if (_backupProfiles.Any(p => p.Id == profileToSave.Id))
+            if (_backupProfiles.Any(p => p.Name == profileToSave.Name))
             {
                 // Update existing profile
-                var existingProfile = _backupProfiles.First(p => p.Id == profileToSave.Id);
+                var existingProfile = _backupProfiles.First(p => p.Name == profileToSave.Name);
                 existingProfile.Name = profileToSave.Name;
                 existingProfile.SourcePath = profileToSave.SourcePath;
                 existingProfile.DestinationPath = profileToSave.DestinationPath;
@@ -260,12 +260,12 @@ public partial class FormMain : Form
             try
             {
                 // Remove from list
-                _backupProfiles.RemoveAll(p => p.Id == _currentSelectedProfile.Id);
+                _backupProfiles.RemoveAll(p => p.Name == _currentSelectedProfile.Name);
                 ProfileManager.SaveProfiles(_backupProfiles);
                 Logger.Log($"Đã xóa cấu hình '{_currentSelectedProfile.Name}'.", _configuratorLogFilePath);
 
                 // Remove associated scheduled task
-                TaskSchedulerService.DeleteBackupTask(_currentSelectedProfile.Id);
+                TaskSchedulerService.DeleteBackupTask(_currentSelectedProfile.Name);
                 Logger.Log($"Đã xóa tác vụ theo lịch cho cấu hình '{_currentSelectedProfile.Name}'.", _configuratorLogFilePath);
 
                 RefreshProfileList();
@@ -372,7 +372,7 @@ public partial class FormMain : Form
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo
             {
                 FileName = workerAppPath,
-                Arguments = $"--profileId {_currentSelectedProfile.Id}",
+                Arguments = $"--profileName {_currentSelectedProfile.Name}",
                 UseShellExecute = false, // Set to false to hide console window
                 CreateNoWindow = true,   // Ensure no window is created
                 RedirectStandardOutput = true,

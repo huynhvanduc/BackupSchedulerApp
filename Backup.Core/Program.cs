@@ -6,19 +6,15 @@ class Program
 {
     static async Task Main(string[] args)
     {
-        Guid profileId = Guid.Empty;
+        string profileName = string.Empty;
         string workerLogFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log", "Worker_Fallback_log.txt");
-
-        // Parse arguments
-        if (args.Length > 1 && args[0].Equals("--profileId", StringComparison.OrdinalIgnoreCase))
+        
+        if (args.Length > 1 && args[0].Equals("--profileName", StringComparison.OrdinalIgnoreCase))
         {
-            if (Guid.TryParse(args[1], out Guid parsedId))
-            {
-                profileId = parsedId;
-            }
+            profileName = args[1] ?? string.Empty;
         }
 
-        if (profileId == Guid.Empty)
+        if (string.IsNullOrEmpty(profileName))
         {
             // Fallback for direct execution without profile ID, or error
             // In a real scenario, this might indicate a misconfiguration of the scheduled task.
@@ -27,11 +23,11 @@ class Program
         }
 
         // Get the specific profile
-        BackupProfile profile = ProfileManager.GetProfileById(profileId);
+        BackupProfile profile = ProfileManager.GetProfileByName(profileName);
 
         if (profile == null)
         {
-            Logger.Log($"Không tìm thấy profile với ID '{profileId}'. Không thể thực hiện sao lưu.", workerLogFilePath);
+            Logger.Log($"Không tìm thấy profile với Name '{profileName}'. Không thể thực hiện sao lưu.", workerLogFilePath);
             Environment.Exit(1); // Exit with error
         }
 

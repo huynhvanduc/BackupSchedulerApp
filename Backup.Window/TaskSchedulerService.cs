@@ -30,7 +30,7 @@ internal class TaskSchedulerService
                 }
 
                 // Task name includes the profile ID to make it unique
-                string taskName = $"BackupTask_{profile.Id}";
+                string taskName = $"BackupTask_{profile.Name}";
 
                 // Remove existing task for this profile if it exists
 
@@ -38,13 +38,13 @@ internal class TaskSchedulerService
                 if (folder.Tasks.Any(task => task.Name.Equals(taskName, StringComparison.OrdinalIgnoreCase)))
                 {
                     folder.DeleteTask(taskName);
-                    Logger.Log($"Đã xóa tác vụ cũ cho profile '{profile.Name}' (ID: {profile.Id}).", _configuratorLogFilePath);
+                    Logger.Log($"Đã xóa tác vụ cũ cho profile '{profile.Name}'", _configuratorLogFilePath);
                 }
 
                 TaskDefinition td = ts.NewTask();
 
                 // Task settings
-                td.RegistrationInfo.Description = $"Thực hiện sao lưu cho profile '{profile.Name}' ({profile.Id}) theo lịch đã cấu hình bởi Backup Scheduler App.";
+                td.RegistrationInfo.Description = $"Thực hiện sao lưu cho profile '{profile.Name}' theo lịch đã cấu hình bởi Backup Scheduler App.";
                 td.Settings.Hidden = false; // Set to true if you want it completely hidden from Task Scheduler UI
                 td.Settings.Enabled = true;
                 td.Settings.StopIfGoingOnBatteries = false;
@@ -58,8 +58,8 @@ internal class TaskSchedulerService
                 td.Settings.MultipleInstances = TaskInstancesPolicy.IgnoreNew;
 
                 // Action: Run the BackupWorker application with the profile ID as argument
-                td.Actions.Add(new ExecAction(workerAppPath, $"--profileId {profile.Id}", null));
-                Logger.Log($"Đã thêm hành động chạy Worker: '{workerAppPath}' với đối số '--profileId {profile.Id}' cho profile '{profile.Name}'.", _configuratorLogFilePath);
+                td.Actions.Add(new ExecAction(workerAppPath, $"--profileName {profile.Name}", null));
+                Logger.Log($"Đã thêm hành động chạy Worker: '{workerAppPath}' với đối số '--profileName {profile.Name}'.", _configuratorLogFilePath);
 
                 // Add Trigger based on schedule type
                 Trigger trigger;
@@ -122,8 +122,8 @@ internal class TaskSchedulerService
     /// <summary>
     /// Deletes a scheduled task associated with a backup profile.
     /// </summary>
-    /// <param name="profileId">The ID of the profile whose task should be deleted.</param>
-    public static void DeleteBackupTask(Guid profileId)
+    /// <param name="name">The name of the profile whose task should be deleted.</param>
+    public static void DeleteBackupTask(string name)
     {
         try
         {
@@ -132,7 +132,7 @@ internal class TaskSchedulerService
                 TaskFolder folder = ts.GetFolder($"\\{TaskFolderName}");
                 if (folder != null)
                 {
-                    string taskName = $"BackupTask_{profileId}";
+                    string taskName = $"BackupTask_{name}";
 
                     // Replace the problematic line with the following code:
                     if (folder.Tasks.Any(task => task.Name.Equals(taskName, StringComparison.OrdinalIgnoreCase)))
@@ -153,7 +153,7 @@ internal class TaskSchedulerService
         }
         catch (Exception ex)
         {
-            Logger.Log($"Lỗi khi xóa tác vụ theo lịch cho profile ID '{profileId}': {ex.Message}\n{ex.StackTrace}", _configuratorLogFilePath);
+            Logger.Log($"Lỗi khi xóa tác vụ theo lịch cho profile name '{name}': {ex.Message}\n{ex.StackTrace}", _configuratorLogFilePath);
             throw;
         }
     }

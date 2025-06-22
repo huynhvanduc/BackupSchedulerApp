@@ -8,7 +8,7 @@
         "DebugTarget": "BackupCore"
       },
       {
-        "Path": "Backup.Window\\Backup.Window.csproj",
+        "Path": "Backup.Window\\BackupApp.csproj",
         "Action": "Start",
         "DebugTarget": "Backup.Window"
       }

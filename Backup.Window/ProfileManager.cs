@@ -70,4 +70,10 @@ public static class ProfileManager
         var profiles = LoadProfiles();
         return profiles.FirstOrDefault(p => p.Id == profileId);
     }
+
+    public static BackupProfile GetProfileByName(string profileName)
+    {
+        var profiles = LoadProfiles();
+        return profiles.FirstOrDefault(p => p.Name == profileName);
+    }
 }

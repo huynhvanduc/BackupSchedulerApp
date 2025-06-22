@@ -28,340 +28,354 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBoxProfiles = new System.Windows.Forms.GroupBox();
-            this.btnDeleteProfile = new System.Windows.Forms.Button();
-            this.btnSaveProfile = new System.Windows.Forms.Button();
-            this.btnAddProfile = new System.Windows.Forms.Button();
-            this.txtProfileName = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lstProfiles = new System.Windows.Forms.ListBox();
-            this.groupBoxBackupConfig = new System.Windows.Forms.GroupBox();
-            this.dtpWeeklyTime = new System.Windows.Forms.DateTimePicker();
-            this.cbDayOfWeek = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dtpDailyTime = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.nudHourlyInterval = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.rbWeekly = new System.Windows.Forms.RadioButton();
-            this.rbDaily = new System.Windows.Forms.RadioButton();
-            this.rbHourly = new System.Windows.Forms.RadioButton();
-            this.btnBrowseDestination = new System.Windows.Forms.Button();
-            this.txtDestinationPath = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnBrowseSource = new System.Windows.Forms.Button();
-            this.txtSourcePath = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblStatus = new System.Windows.Forms.Label();
-            this.btnRunNow = new System.Windows.Forms.Button();
-            this.btnApplyToTaskScheduler = new System.Windows.Forms.Button();
-            this.groupBoxProfiles.SuspendLayout();
-            this.groupBoxBackupConfig.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudHourlyInterval)).BeginInit();
-            this.SuspendLayout();
-            //
+            groupBoxProfiles = new GroupBox();
+            btnDeleteProfile = new Button();
+            btnSaveProfile = new Button();
+            btnAddProfile = new Button();
+            txtProfileName = new TextBox();
+            label6 = new Label();
+            lstProfiles = new ListBox();
+            groupBoxBackupConfig = new GroupBox();
+            dtpWeeklyTime = new DateTimePicker();
+            cbDayOfWeek = new ComboBox();
+            label5 = new Label();
+            dtpDailyTime = new DateTimePicker();
+            label4 = new Label();
+            nudHourlyInterval = new NumericUpDown();
+            label3 = new Label();
+            rbWeekly = new RadioButton();
+            rbDaily = new RadioButton();
+            rbHourly = new RadioButton();
+            btnBrowseDestination = new Button();
+            txtDestinationPath = new TextBox();
+            label2 = new Label();
+            btnBrowseSource = new Button();
+            txtSourcePath = new TextBox();
+            label1 = new Label();
+            lblStatus = new Label();
+            btnRunNow = new Button();
+            btnApplyToTaskScheduler = new Button();
+            groupBoxProfiles.SuspendLayout();
+            groupBoxBackupConfig.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)nudHourlyInterval).BeginInit();
+            SuspendLayout();
+            // 
             // groupBoxProfiles
-            //
-            this.groupBoxProfiles.Controls.Add(this.btnDeleteProfile);
-            this.groupBoxProfiles.Controls.Add(this.btnSaveProfile);
-            this.groupBoxProfiles.Controls.Add(this.btnAddProfile);
-            this.groupBoxProfiles.Controls.Add(this.txtProfileName);
-            this.groupBoxProfiles.Controls.Add(this.label6);
-            this.groupBoxProfiles.Controls.Add(this.lstProfiles);
-            this.groupBoxProfiles.Location = new System.Drawing.Point(12, 12);
-            this.groupBoxProfiles.Name = "groupBoxProfiles";
-            this.groupBoxProfiles.Size = new System.Drawing.Size(250, 400);
-            this.groupBoxProfiles.TabIndex = 0;
-            this.groupBoxProfiles.TabStop = false;
-            this.groupBoxProfiles.Text = "Quản lý cấu hình sao lưu";
-            //
+            // 
+            groupBoxProfiles.Controls.Add(btnDeleteProfile);
+            groupBoxProfiles.Controls.Add(btnSaveProfile);
+            groupBoxProfiles.Controls.Add(btnAddProfile);
+            groupBoxProfiles.Controls.Add(txtProfileName);
+            groupBoxProfiles.Controls.Add(label6);
+            groupBoxProfiles.Controls.Add(lstProfiles);
+            groupBoxProfiles.Location = new Point(14, 16);
+            groupBoxProfiles.Margin = new Padding(3, 4, 3, 4);
+            groupBoxProfiles.Name = "groupBoxProfiles";
+            groupBoxProfiles.Padding = new Padding(3, 4, 3, 4);
+            groupBoxProfiles.Size = new Size(286, 533);
+            groupBoxProfiles.TabIndex = 0;
+            groupBoxProfiles.TabStop = false;
+            groupBoxProfiles.Text = "Quản lý cấu hình sao lưu";
+            // 
             // btnDeleteProfile
-            //
-            this.btnDeleteProfile.Enabled = false;
-            this.btnDeleteProfile.Location = new System.Drawing.Point(167, 360);
-            this.btnDeleteProfile.Name = "btnDeleteProfile";
-            this.btnDeleteProfile.Size = new System.Drawing.Size(75, 25);
-            this.btnDeleteProfile.TabIndex = 5;
-            this.btnDeleteProfile.Text = "Xóa";
-            this.btnDeleteProfile.UseVisualStyleBackColor = true;
-            this.btnDeleteProfile.Click += new System.EventHandler(this.btnDeleteProfile_Click);
-            //
+            // 
+            btnDeleteProfile.Enabled = false;
+            btnDeleteProfile.Location = new Point(191, 480);
+            btnDeleteProfile.Margin = new Padding(3, 4, 3, 4);
+            btnDeleteProfile.Name = "btnDeleteProfile";
+            btnDeleteProfile.Size = new Size(86, 33);
+            btnDeleteProfile.TabIndex = 5;
+            btnDeleteProfile.Text = "Xóa";
+            btnDeleteProfile.UseVisualStyleBackColor = true;
+            btnDeleteProfile.Click += btnDeleteProfile_Click;
+            // 
             // btnSaveProfile
-            //
-            this.btnSaveProfile.Location = new System.Drawing.Point(86, 360);
-            this.btnSaveProfile.Name = "btnSaveProfile";
-            this.btnSaveProfile.Size = new System.Drawing.Size(75, 25);
-            this.btnSaveProfile.TabIndex = 4;
-            this.btnSaveProfile.Text = "Lưu";
-            this.btnSaveProfile.UseVisualStyleBackColor = true;
-            this.btnSaveProfile.Click += new System.EventHandler(this.btnSaveProfile_Click);
-            //
+            // 
+            btnSaveProfile.Location = new Point(98, 480);
+            btnSaveProfile.Margin = new Padding(3, 4, 3, 4);
+            btnSaveProfile.Name = "btnSaveProfile";
+            btnSaveProfile.Size = new Size(86, 33);
+            btnSaveProfile.TabIndex = 4;
+            btnSaveProfile.Text = "Lưu";
+            btnSaveProfile.UseVisualStyleBackColor = true;
+            btnSaveProfile.Click += btnSaveProfile_Click;
+            // 
             // btnAddProfile
-            //
-            this.btnAddProfile.Location = new System.Drawing.Point(6, 360);
-            this.btnAddProfile.Name = "btnAddProfile";
-            this.btnAddProfile.Size = new System.Drawing.Size(75, 25);
-            this.btnAddProfile.TabIndex = 3;
-            this.btnAddProfile.Text = "Thêm mới";
-            this.btnAddProfile.UseVisualStyleBackColor = true;
-            this.btnAddProfile.Click += new System.EventHandler(this.btnAddProfile_Click);
-            //
+            // 
+            btnAddProfile.Location = new Point(7, 480);
+            btnAddProfile.Margin = new Padding(3, 4, 3, 4);
+            btnAddProfile.Name = "btnAddProfile";
+            btnAddProfile.Size = new Size(86, 33);
+            btnAddProfile.TabIndex = 3;
+            btnAddProfile.Text = "Thêm mới";
+            btnAddProfile.UseVisualStyleBackColor = true;
+            btnAddProfile.Click += btnAddProfile_Click;
+            // 
             // txtProfileName
-            //
-            this.txtProfileName.Location = new System.Drawing.Point(86, 27);
-            this.txtProfileName.Name = "txtProfileName";
-            this.txtProfileName.Size = new System.Drawing.Size(156, 23);
-            this.txtProfileName.TabIndex = 2;
-            //
+            // 
+            txtProfileName.Location = new Point(98, 36);
+            txtProfileName.Margin = new Padding(3, 4, 3, 4);
+            txtProfileName.Name = "txtProfileName";
+            txtProfileName.Size = new Size(178, 27);
+            txtProfileName.TabIndex = 2;
+            // 
             // label6
-            //
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 30);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 15);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Tên cấu hình:";
-            //
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(7, 40);
+            label6.Name = "label6";
+            label6.Size = new Size(94, 20);
+            label6.TabIndex = 1;
+            label6.Text = "Tên cấu hình:";
+            // 
             // lstProfiles
-            //
-            this.lstProfiles.FormattingEnabled = true;
-            this.lstProfiles.ItemHeight = 15;
-            this.lstProfiles.Location = new System.Drawing.Point(6, 56);
-            this.lstProfiles.Name = "lstProfiles";
-            this.lstProfiles.Size = new System.Drawing.Size(236, 289);
-            this.lstProfiles.TabIndex = 0;
-            //
+            // 
+            lstProfiles.FormattingEnabled = true;
+            lstProfiles.Location = new Point(7, 75);
+            lstProfiles.Margin = new Padding(3, 4, 3, 4);
+            lstProfiles.Name = "lstProfiles";
+            lstProfiles.Size = new Size(269, 384);
+            lstProfiles.TabIndex = 0;
+            // 
             // groupBoxBackupConfig
-            //
-            this.groupBoxBackupConfig.Controls.Add(this.dtpWeeklyTime);
-            this.groupBoxBackupConfig.Controls.Add(this.cbDayOfWeek);
-            this.groupBoxBackupConfig.Controls.Add(this.label5);
-            this.groupBoxBackupConfig.Controls.Add(this.dtpDailyTime);
-            this.groupBoxBackupConfig.Controls.Add(this.label4);
-            this.groupBoxBackupConfig.Controls.Add(this.nudHourlyInterval);
-            this.groupBoxBackupConfig.Controls.Add(this.label3);
-            this.groupBoxBackupConfig.Controls.Add(this.rbWeekly);
-            this.groupBoxBackupConfig.Controls.Add(this.rbDaily);
-            this.groupBoxBackupConfig.Controls.Add(this.rbHourly);
-            this.groupBoxBackupConfig.Controls.Add(this.btnBrowseDestination);
-            this.groupBoxBackupConfig.Controls.Add(this.txtDestinationPath);
-            this.groupBoxBackupConfig.Controls.Add(this.label2);
-            this.groupBoxBackupConfig.Controls.Add(this.btnBrowseSource);
-            this.groupBoxBackupConfig.Controls.Add(this.txtSourcePath);
-            this.groupBoxBackupConfig.Controls.Add(this.label1);
-            this.groupBoxBackupConfig.Location = new System.Drawing.Point(268, 12);
-            this.groupBoxBackupConfig.Name = "groupBoxBackupConfig";
-            this.groupBoxBackupConfig.Size = new System.Drawing.Size(490, 360);
-            this.groupBoxBackupConfig.TabIndex = 1;
-            this.groupBoxBackupConfig.TabStop = false;
-            this.groupBoxBackupConfig.Text = "Cấu hình chi tiết sao lưu";
-            //
+            // 
+            groupBoxBackupConfig.Controls.Add(dtpWeeklyTime);
+            groupBoxBackupConfig.Controls.Add(cbDayOfWeek);
+            groupBoxBackupConfig.Controls.Add(label5);
+            groupBoxBackupConfig.Controls.Add(dtpDailyTime);
+            groupBoxBackupConfig.Controls.Add(label4);
+            groupBoxBackupConfig.Controls.Add(nudHourlyInterval);
+            groupBoxBackupConfig.Controls.Add(label3);
+            groupBoxBackupConfig.Controls.Add(rbWeekly);
+            groupBoxBackupConfig.Controls.Add(rbDaily);
+            groupBoxBackupConfig.Controls.Add(rbHourly);
+            groupBoxBackupConfig.Controls.Add(btnBrowseDestination);
+            groupBoxBackupConfig.Controls.Add(txtDestinationPath);
+            groupBoxBackupConfig.Controls.Add(label2);
+            groupBoxBackupConfig.Controls.Add(btnBrowseSource);
+            groupBoxBackupConfig.Controls.Add(txtSourcePath);
+            groupBoxBackupConfig.Controls.Add(label1);
+            groupBoxBackupConfig.Location = new Point(306, 16);
+            groupBoxBackupConfig.Margin = new Padding(3, 4, 3, 4);
+            groupBoxBackupConfig.Name = "groupBoxBackupConfig";
+            groupBoxBackupConfig.Padding = new Padding(3, 4, 3, 4);
+            groupBoxBackupConfig.Size = new Size(560, 480);
+            groupBoxBackupConfig.TabIndex = 1;
+            groupBoxBackupConfig.TabStop = false;
+            groupBoxBackupConfig.Text = "Cấu hình chi tiết sao lưu";
+            // 
             // dtpWeeklyTime
-            //
-            this.dtpWeeklyTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpWeeklyTime.Location = new System.Drawing.Point(269, 280);
-            this.dtpWeeklyTime.Name = "dtpWeeklyTime";
-            this.dtpWeeklyTime.ShowUpDown = true;
-            this.dtpWeeklyTime.Size = new System.Drawing.Size(95, 23);
-            this.dtpWeeklyTime.TabIndex = 9;
-            //
+            // 
+            dtpWeeklyTime.Format = DateTimePickerFormat.Time;
+            dtpWeeklyTime.Location = new Point(307, 373);
+            dtpWeeklyTime.Margin = new Padding(3, 4, 3, 4);
+            dtpWeeklyTime.Name = "dtpWeeklyTime";
+            dtpWeeklyTime.ShowUpDown = true;
+            dtpWeeklyTime.Size = new Size(108, 27);
+            dtpWeeklyTime.TabIndex = 9;
+            // 
             // cbDayOfWeek
-            //
-            this.cbDayOfWeek.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDayOfWeek.FormattingEnabled = true;
-            this.cbDayOfWeek.Location = new System.Drawing.Point(180, 280);
-            this.cbDayOfWeek.Name = "cbDayOfWeek";
-            this.cbDayOfWeek.Size = new System.Drawing.Size(83, 23);
-            this.cbDayOfWeek.TabIndex = 8;
-            //
+            // 
+            cbDayOfWeek.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbDayOfWeek.FormattingEnabled = true;
+            cbDayOfWeek.Location = new Point(206, 373);
+            cbDayOfWeek.Margin = new Padding(3, 4, 3, 4);
+            cbDayOfWeek.Name = "cbDayOfWeek";
+            cbDayOfWeek.Size = new Size(94, 28);
+            cbDayOfWeek.TabIndex = 8;
+            // 
             // label5
-            //
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(145, 284);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 15);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "vào:";
-            //
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(166, 379);
+            label5.Name = "label5";
+            label5.Size = new Size(36, 20);
+            label5.TabIndex = 7;
+            label5.Text = "vào:";
+            // 
             // dtpDailyTime
-            //
-            this.dtpDailyTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpDailyTime.Location = new System.Drawing.Point(180, 233);
-            this.dtpDailyTime.Name = "dtpDailyTime";
-            this.dtpDailyTime.ShowUpDown = true;
-            this.dtpDailyTime.Size = new System.Drawing.Size(95, 23);
-            this.dtpDailyTime.TabIndex = 6;
-            //
+            // 
+            dtpDailyTime.Format = DateTimePickerFormat.Time;
+            dtpDailyTime.Location = new Point(206, 311);
+            dtpDailyTime.Margin = new Padding(3, 4, 3, 4);
+            dtpDailyTime.Name = "dtpDailyTime";
+            dtpDailyTime.ShowUpDown = true;
+            dtpDailyTime.Size = new Size(108, 27);
+            dtpDailyTime.TabIndex = 6;
+            // 
             // label4
-            //
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(145, 237);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 15);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "vào:";
-            //
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(166, 316);
+            label4.Name = "label4";
+            label4.Size = new Size(36, 20);
+            label4.TabIndex = 5;
+            label4.Text = "vào:";
+            // 
             // nudHourlyInterval
-            //
-            this.nudHourlyInterval.Location = new System.Drawing.Point(180, 186);
-            this.nudHourlyInterval.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudHourlyInterval.Name = "nudHourlyInterval";
-            this.nudHourlyInterval.Size = new System.Drawing.Size(50, 23);
-            this.nudHourlyInterval.TabIndex = 4;
-            this.nudHourlyInterval.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            //
+            // 
+            nudHourlyInterval.Location = new Point(206, 248);
+            nudHourlyInterval.Margin = new Padding(3, 4, 3, 4);
+            nudHourlyInterval.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            nudHourlyInterval.Name = "nudHourlyInterval";
+            nudHourlyInterval.Size = new Size(57, 27);
+            nudHourlyInterval.TabIndex = 4;
+            nudHourlyInterval.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            // 
             // label3
-            //
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(236, 188);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 15);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "giờ/lần";
-            //
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(270, 251);
+            label3.Name = "label3";
+            label3.Size = new Size(57, 20);
+            label3.TabIndex = 3;
+            label3.Text = "giờ/lần";
+            // 
             // rbWeekly
-            //
-            this.rbWeekly.AutoSize = true;
-            this.rbWeekly.Location = new System.Drawing.Point(19, 282);
-            this.rbWeekly.Name = "rbWeekly";
-            this.rbWeekly.Size = new System.Drawing.Size(120, 19);
-            this.rbWeekly.TabIndex = 2;
-            this.rbWeekly.Text = "Hàng tuần vào thứ:";
-            this.rbWeekly.UseVisualStyleBackColor = true;
-            //
+            // 
+            rbWeekly.AutoSize = true;
+            rbWeekly.Location = new Point(22, 376);
+            rbWeekly.Margin = new Padding(3, 4, 3, 4);
+            rbWeekly.Name = "rbWeekly";
+            rbWeekly.Size = new Size(156, 24);
+            rbWeekly.TabIndex = 2;
+            rbWeekly.Text = "Hàng tuần vào thứ:";
+            rbWeekly.UseVisualStyleBackColor = true;
+            // 
             // rbDaily
-            //
-            this.rbDaily.AutoSize = true;
-            this.rbDaily.Checked = true;
-            this.rbDaily.Location = new System.Drawing.Point(19, 235);
-            this.rbDaily.Name = "rbDaily";
-            this.rbDaily.Size = new System.Drawing.Size(99, 19);
-            this.rbDaily.TabIndex = 1;
-            this.rbDaily.TabStop = true;
-            this.rbDaily.Text = "Hàng ngày vào:";
-            this.rbDaily.UseVisualStyleBackColor = true;
-            //
+            // 
+            rbDaily.AutoSize = true;
+            rbDaily.Checked = true;
+            rbDaily.Location = new Point(22, 313);
+            rbDaily.Margin = new Padding(3, 4, 3, 4);
+            rbDaily.Name = "rbDaily";
+            rbDaily.Size = new Size(133, 24);
+            rbDaily.TabIndex = 1;
+            rbDaily.TabStop = true;
+            rbDaily.Text = "Hàng ngày vào:";
+            rbDaily.UseVisualStyleBackColor = true;
+            // 
             // rbHourly
-            //
-            this.rbHourly.AutoSize = true;
-            this.rbHourly.Location = new System.Drawing.Point(19, 188);
-            this.rbHourly.Name = "rbHourly";
-            this.rbHourly.Size = new System.Drawing.Size(117, 19);
-            this.rbHourly.TabIndex = 0;
-            this.rbHourly.Text = "Mỗi khoảng thời gian:";
-            this.rbHourly.UseVisualStyleBackColor = true;
-            //
+            // 
+            rbHourly.AutoSize = true;
+            rbHourly.Location = new Point(22, 251);
+            rbHourly.Margin = new Padding(3, 4, 3, 4);
+            rbHourly.Name = "rbHourly";
+            rbHourly.Size = new Size(175, 24);
+            rbHourly.TabIndex = 0;
+            rbHourly.Text = "Mỗi khoảng thời gian:";
+            rbHourly.UseVisualStyleBackColor = true;
+            // 
             // btnBrowseDestination
-            //
-            this.btnBrowseDestination.Location = new System.Drawing.Point(409, 93);
-            this.btnBrowseDestination.Name = "btnBrowseDestination";
-            this.btnBrowseDestination.Size = new System.Drawing.Size(75, 23);
-            this.btnBrowseDestination.TabIndex = 5;
-            this.btnBrowseDestination.Text = "Duyệt...";
-            this.btnBrowseDestination.UseVisualStyleBackColor = true;
-            this.btnBrowseDestination.Click += new System.EventHandler(this.btnBrowseDestination_Click);
-            //
+            // 
+            btnBrowseDestination.Location = new Point(467, 124);
+            btnBrowseDestination.Margin = new Padding(3, 4, 3, 4);
+            btnBrowseDestination.Name = "btnBrowseDestination";
+            btnBrowseDestination.Size = new Size(86, 31);
+            btnBrowseDestination.TabIndex = 5;
+            btnBrowseDestination.Text = "Duyệt...";
+            btnBrowseDestination.UseVisualStyleBackColor = true;
+            btnBrowseDestination.Click += btnBrowseDestination_Click;
+            // 
             // txtDestinationPath
-            //
-            this.txtDestinationPath.Location = new System.Drawing.Point(15, 93);
-            this.txtDestinationPath.Name = "txtDestinationPath";
-            this.txtDestinationPath.Size = new System.Drawing.Size(388, 23);
-            this.txtDestinationPath.TabIndex = 4;
-            //
+            // 
+            txtDestinationPath.Location = new Point(17, 124);
+            txtDestinationPath.Margin = new Padding(3, 4, 3, 4);
+            txtDestinationPath.Name = "txtDestinationPath";
+            txtDestinationPath.Size = new Size(443, 27);
+            txtDestinationPath.TabIndex = 4;
+            // 
             // label2
-            //
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 75);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 15);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Đường dẫn đích (B):";
-            //
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(17, 100);
+            label2.Name = "label2";
+            label2.Size = new Size(142, 20);
+            label2.TabIndex = 3;
+            label2.Text = "Đường dẫn đích (B):";
+            // 
             // btnBrowseSource
-            //
-            this.btnBrowseSource.Location = new System.Drawing.Point(409, 38);
-            this.btnBrowseSource.Name = "btnBrowseSource";
-            this.btnBrowseSource.Size = new System.Drawing.Size(75, 23);
-            this.btnBrowseSource.TabIndex = 2;
-            this.btnBrowseSource.Text = "Duyệt...";
-            this.btnBrowseSource.UseVisualStyleBackColor = true;
-            this.btnBrowseSource.Click += new System.EventHandler(this.btnBrowseSource_Click);
-            //
+            // 
+            btnBrowseSource.Location = new Point(467, 51);
+            btnBrowseSource.Margin = new Padding(3, 4, 3, 4);
+            btnBrowseSource.Name = "btnBrowseSource";
+            btnBrowseSource.Size = new Size(86, 31);
+            btnBrowseSource.TabIndex = 2;
+            btnBrowseSource.Text = "Duyệt...";
+            btnBrowseSource.UseVisualStyleBackColor = true;
+            btnBrowseSource.Click += btnBrowseSource_Click;
+            // 
             // txtSourcePath
-            //
-            this.txtSourcePath.Location = new System.Drawing.Point(15, 38);
-            this.txtSourcePath.Name = "txtSourcePath";
-            this.txtSourcePath.Size = new System.Drawing.Size(388, 23);
-            this.txtSourcePath.TabIndex = 1;
-            //
+            // 
+            txtSourcePath.Location = new Point(17, 51);
+            txtSourcePath.Margin = new Padding(3, 4, 3, 4);
+            txtSourcePath.Name = "txtSourcePath";
+            txtSourcePath.Size = new Size(443, 27);
+            txtSourcePath.TabIndex = 1;
+            // 
             // label1
-            //
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Đường dẫn nguồn (A):";
-            //
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(17, 27);
+            label1.Name = "label1";
+            label1.Size = new Size(157, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Đường dẫn nguồn (A):";
+            // 
             // lblStatus
-            //
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblStatus.Location = new System.Drawing.Point(268, 385);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(65, 15);
-            this.lblStatus.TabIndex = 2;
-            this.lblStatus.Text = "Trạng thái:";
-            //
+            // 
+            lblStatus.AutoSize = true;
+            lblStatus.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblStatus.Location = new Point(306, 513);
+            lblStatus.Name = "lblStatus";
+            lblStatus.Size = new Size(84, 20);
+            lblStatus.TabIndex = 2;
+            lblStatus.Text = "Trạng thái:";
+            // 
             // btnRunNow
-            //
-            this.btnRunNow.Location = new System.Drawing.Point(268, 403);
-            this.btnRunNow.Name = "btnRunNow";
-            this.btnRunNow.Size = new System.Drawing.Size(100, 30);
-            this.btnRunNow.TabIndex = 3;
-            this.btnRunNow.Text = "Chạy ngay";
-            this.btnRunNow.UseVisualStyleBackColor = true;
-            this.btnRunNow.Click += new System.EventHandler(this.btnRunNow_Click);
-            //
+            // 
+            btnRunNow.Location = new Point(306, 537);
+            btnRunNow.Margin = new Padding(3, 4, 3, 4);
+            btnRunNow.Name = "btnRunNow";
+            btnRunNow.Size = new Size(114, 40);
+            btnRunNow.TabIndex = 3;
+            btnRunNow.Text = "Chạy ngay";
+            btnRunNow.UseVisualStyleBackColor = true;
+            btnRunNow.Click += btnRunNow_Click;
+            // 
             // btnApplyToTaskScheduler
-            //
-            this.btnApplyToTaskScheduler.Enabled = false;
-            this.btnApplyToTaskScheduler.Location = new System.Drawing.Point(548, 403);
-            this.btnApplyToTaskScheduler.Name = "btnApplyToTaskScheduler";
-            this.btnApplyToTaskScheduler.Size = new System.Drawing.Size(210, 30);
-            this.btnApplyToTaskScheduler.TabIndex = 4;
-            this.btnApplyToTaskScheduler.Text = "Áp dụng vào Task Scheduler";
-            this.btnApplyToTaskScheduler.UseVisualStyleBackColor = true;
-            this.btnApplyToTaskScheduler.Click += new System.EventHandler(this.btnApplyToTaskScheduler_Click);
-            //
-            // Form1
-            //
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 440);
-            this.Controls.Add(this.btnApplyToTaskScheduler);
-            this.Controls.Add(this.btnRunNow);
-            this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.groupBoxBackupConfig);
-            this.Controls.Add(this.groupBoxProfiles);
-            this.MinimumSize = new System.Drawing.Size(786, 479);
-            this.Name = "Form1";
-            this.Text = "Quản lý sao lưu theo lịch";
-            this.groupBoxProfiles.ResumeLayout(false);
-            this.groupBoxProfiles.PerformLayout();
-            this.groupBoxBackupConfig.ResumeLayout(false);
-            this.groupBoxBackupConfig.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudHourlyInterval)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            // 
+            btnApplyToTaskScheduler.Enabled = false;
+            btnApplyToTaskScheduler.Location = new Point(626, 537);
+            btnApplyToTaskScheduler.Margin = new Padding(3, 4, 3, 4);
+            btnApplyToTaskScheduler.Name = "btnApplyToTaskScheduler";
+            btnApplyToTaskScheduler.Size = new Size(240, 40);
+            btnApplyToTaskScheduler.TabIndex = 4;
+            btnApplyToTaskScheduler.Text = "Áp dụng vào Task Scheduler";
+            btnApplyToTaskScheduler.UseVisualStyleBackColor = true;
+            btnApplyToTaskScheduler.Click += btnApplyToTaskScheduler_Click;
+            // 
+            // FormMain
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(880, 587);
+            Controls.Add(btnApplyToTaskScheduler);
+            Controls.Add(btnRunNow);
+            Controls.Add(lblStatus);
+            Controls.Add(groupBoxBackupConfig);
+            Controls.Add(groupBoxProfiles);
+            Margin = new Padding(3, 4, 3, 4);
+            MinimumSize = new Size(896, 623);
+            Name = "FormMain";
+            Text = "Quản lý sao lưu theo lịch";
+            groupBoxProfiles.ResumeLayout(false);
+            groupBoxProfiles.PerformLayout();
+            groupBoxBackupConfig.ResumeLayout(false);
+            groupBoxBackupConfig.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)nudHourlyInterval).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

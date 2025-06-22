@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupCore", "Backup.Core\B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backup.Ultilities", "Backup.Ultilities\Backup.Ultilities.csproj", "{438848EF-AA91-4483-97DC-0307D50245F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backup.Window", "Backup.Window\Backup.Window.csproj", "{1E80E3BB-E3D6-4C98-B73D-CBFD5AF454C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupApp", "Backup.Window\BackupApp.csproj", "{1E80E3BB-E3D6-4C98-B73D-CBFD5AF454C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
